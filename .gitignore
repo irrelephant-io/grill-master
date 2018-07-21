@@ -45,6 +45,9 @@ typings/
 # Optional eslint cache
 .eslintcache
 
+# Optional parcel cache
+.cache
+
 # Optional REPL history
 .node_repl_history
 
@@ -59,3 +62,6 @@ typings/
 
 # next.js build output
 .next
+
+# dist folder
+dist
