@@ -3,3 +3,18 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  p
+    | Navigate to the 
+    a(href="/api/menus") /api/menus
+    |  to get a random menu.
+    | A menu is a collection of random menu items along with some other info,
+    | like the size of the grill:
+  pre.random-menu #{JSON.stringify(randomMenu, null, 4)}
+  p
+    | And each and every menu item has the following structure:
+  pre.random-item #{JSON.stringify(randomMenuItem, null, 4)}
+  p
+    | Your task is to develop an app which can read a random menu from this service
+    | and calculate the minimum amount of runs required to process the entire menu.
+    | GLHF! :D
+

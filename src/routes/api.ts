@@ -1,12 +1,12 @@
 import { Router } from 'express';
-import MenuFactory from '../services/MenuFactory';
 import StaticFoodTemplateRepo from '../repos/StaticFoodTemplateRepo';
+import MenuBuilder from '../services/MenuBuilder';
 
 const router = Router();
 
-router.get('/', (req, res, next) => {
+router.get('/menus', (req, res, next) => {
   res.json(
-    new MenuFactory(new StaticFoodTemplateRepo).getRandomMenu()
+    new MenuBuilder(new StaticFoodTemplateRepo).getRandomMenu()
   );
 });
 

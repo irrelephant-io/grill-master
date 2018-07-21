@@ -4,8 +4,9 @@ import IDimensions from "../models/IDimensions";
 import IMenuItem from "../models/IMenuItem";
 import IFoodTemplateRepo from '../repos/IFoodTemplateRepo';
 import IFoodTemplate from '../models/IFoodTemplate';
+import IMenuBuilder from './IMenuBuilder';
 
-export default class MenuFactory {
+export default class MenuBuilder implements IMenuBuilder {
 
     constructor(private templateRepo: IFoodTemplateRepo) { }
 
@@ -26,7 +27,7 @@ export default class MenuFactory {
         };
     }
 
-    private getRandomItem = (): IMenuItem => {
+    public getRandomMenuItem = (): IMenuItem => {
         const randomTemplate = this.templateRepo.getRandomTemplate();
         return {
             dimensions: this.getRandomDimensions(
@@ -49,7 +50,7 @@ export default class MenuFactory {
     private getRandomMenuItems(count: number): IMenuItem[] {
         return _
             .chain(_.range(count))
-            .map(this.getRandomItem)
+            .map(this.getRandomMenuItem)
             .keyBy((item: IMenuItem) => item.name)
             .mergeWith((obj: IMenuItem, src: IMenuItem) => {
                 return {
