@@ -28,6 +28,7 @@
     "@types/lodash": "^4.14.112",
     "@types/morgan": "^1.7.35",
     "@types/node": "^10.5.2",
+    "autobind-decorator": "^2.1.0",
     "parcel": "^1.9.7",
     "typescript": "^2.9.2"
   },

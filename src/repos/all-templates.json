@@ -1,0 +1,84 @@
+[
+    {
+        "type": "Sausage",
+        "materials": [
+            "Chicken",
+            "Pork",
+            "Beef",
+            "Mutton",
+            "Spider",
+            "Liver",
+            "Reindeer",
+            "Chickpea",
+            "Walnut"
+        ],
+        "traits": [
+            "Smoked",
+            "Spicy",
+            "Savory"
+        ],
+        "additives": [
+            "Paprika",
+            "Chilly",
+            "Cheese",
+            "Lard Pieces"
+        ],
+        "minSize": {
+            "width": 1,
+            "height": 5
+        },
+        "maxSize": {
+            "width": 1,
+            "height": 15
+        },
+        "hasDifferentSizes": false
+    },
+    {
+        "type": "Steak",
+        "materials": [
+            "Chicken Breast",
+            "Salmon",
+            "Marble Beef",
+            "Beef",
+            "Pork",
+            "Soy"
+        ],
+        "traits": [
+            "Smoked",
+            "Spicy",
+            "Savory"
+        ],
+        "additives": [],
+        "minSize": {
+            "width": 10,
+            "height": 10
+        },
+        "maxSize": {
+            "width": 20,
+            "height": 20
+        },
+        "hasDifferentSizes": false
+    },
+    {
+        "type": "Slice",
+        "materials": [
+            "Tomato",
+            "Zucchini",
+            "Potato",
+            "Onion",
+            "Bread",
+            "Cucumber"
+        ],
+        "traits": [],
+        "additives": [],
+        "minSize": {
+            "width": 3,
+            "height": 3
+        },
+        "maxSize": {
+            "width": 6,
+            "height": 6
+        },
+        "hasDifferentSizes": false
+    }
+]
