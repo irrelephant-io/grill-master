@@ -16,7 +16,7 @@ export default class MenuBuilder implements IMenuBuilder {
                 { width: 50, height: 50 },
                 { width: 120, height: 120 }
             ),
-            menuItems: this.getRandomMenuItems(_.random(5, 15, false))
+            menuItems: this.getRandomMenuItems(_.random(15, 25, false))
         }
     }
 
@@ -34,7 +34,7 @@ export default class MenuBuilder implements IMenuBuilder {
                 randomTemplate.minSize, randomTemplate.maxSize
             ),
             name: this.getNameFromTemplate(randomTemplate),
-            count: _.random(5, 15, false)
+            count: _.random(15, 25, false)
         };
     }
 
